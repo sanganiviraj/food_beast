@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_beast/home_page.dart';
+import 'package:food_beast/login.dart';
 import 'package:food_beast/main_home.dart';
 import 'package:food_beast/splash_screen.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           children: [
             new GestureDetector(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => main_home() ));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => login() ));
               },
               child: Container(
                 width: double.infinity,
