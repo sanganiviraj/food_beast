@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_beast/main_home.dart';
+import 'package:food_beast/profile.dart';
 import 'package:intl/intl.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -16,6 +17,7 @@ class _sign_inState extends State<sign_in> {
   TextEditingController emailcontroller=TextEditingController();
   TextEditingController passwordcontroller=TextEditingController();
   TextEditingController dateinput=TextEditingController();
+
 
   String ?arr;
   String ?pasd;
@@ -57,6 +59,7 @@ class _sign_inState extends State<sign_in> {
                           controller: emailcontroller,
                           onChanged: (val){
                             arr=(val.length>=10)?'Please Enter Valid Input':null;
+                            
                             setState(() {
 
                             });

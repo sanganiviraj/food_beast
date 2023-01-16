@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:food_beast/cold_drinks.dart';
 import 'package:food_beast/home.dart';
 import 'package:food_beast/home_page.dart';
+import 'package:food_beast/profile.dart';
 
 class main_home extends StatefulWidget {
 
@@ -41,7 +42,8 @@ class _main_homeState extends State<main_home> {
           // new main_home(),
           new home(),
           new home_page(),
-          new cold_drinks()
+          new cold_drinks(),
+          new profile(),
           // new YourCustomFeedWidget(),
           // new YourCustomCommunityWidget(),
         ],

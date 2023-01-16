@@ -147,7 +147,7 @@ class _sign_upState extends State<sign_up> {
                           context: context,
                           initialDate: DateTime.now(),
                           firstDate: DateTime(2004), //DateTime.now() - not to allow to choose before today.
-                          lastDate: DateTime(2023)
+                          lastDate: DateTime(2024)
                       );
 
                       if(pickedDate != null ){
