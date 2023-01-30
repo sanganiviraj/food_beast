@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_beast/cold.dart';
 
 import 'biryani.dart';
 
@@ -164,7 +165,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(
@@ -253,7 +254,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(
@@ -342,7 +343,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(
@@ -431,7 +432,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(
@@ -521,7 +522,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(
@@ -611,7 +612,7 @@ class cold_drinks extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => biryani()),
+                                        MaterialPageRoute(builder: (context) => coca()),
                                       );
                                     },
                                     child: Row(

@@ -12,9 +12,7 @@ class home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
           appBar: AppBar(
             title: const Text("Food Beast"),
             centerTitle: true,
@@ -994,7 +992,7 @@ class home extends StatelessWidget {
                 ),
               ],
             ),
-          ]))),
-    );
+          ])));
+
   }
 }

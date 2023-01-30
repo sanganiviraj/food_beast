@@ -23,9 +23,7 @@ class _splash_screenState extends State<splash_screen> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
         body: Center(
           child: Container(
             width: double.infinity,
@@ -39,7 +37,7 @@ class _splash_screenState extends State<splash_screen> {
             ),
           ),
         ),
-      ),
-    );
+      );
+
   }
 }

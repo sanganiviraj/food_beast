@@ -20,9 +20,7 @@ class _main_homeState extends State<main_home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(icon: Icon(Icons.home,),label: 'Home'),
@@ -51,8 +49,8 @@ class _main_homeState extends State<main_home> {
           ],
         ),
 
-      ),
-    );
+      );
+
 
   }
   void _onItemTapped(int index) {

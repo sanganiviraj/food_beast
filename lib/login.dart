@@ -22,9 +22,7 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return  Scaffold(
         resizeToAvoidBottomInset: false,
         body: (
         Container(
@@ -81,7 +79,7 @@ class _loginState extends State<login> with SingleTickerProviderStateMixin{
           ),
         )
         ),
-      ),
-    );
+      );
+
   }
 }

@@ -14,9 +14,7 @@ class home_page extends StatelessWidget {
 
     return DefaultTabController(
       length: 2,
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
+      child:  Scaffold(
           appBar: AppBar(
 
             title: const Text("Food Beast"),
@@ -108,8 +106,8 @@ class home_page extends StatelessWidget {
             ],
           ),
 
-        ),
-      ),
+        )
+
     );
   }
 
