@@ -20,35 +20,38 @@ class _main_homeState extends State<main_home> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home,),label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.local_fire_department_outlined,),label: 'Trending'),
-          BottomNavigationBarItem(icon: Icon(Icons.fastfood,),label: 'Coldrinks'),
-          BottomNavigationBarItem(icon: Icon(Icons.person,),label: 'Profile')
-        ],
-        currentIndex: _selectedIndex, //New
-        onTap: _onItemTapped,
-        unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.deepOrange,
-        // backgroundColor: Color.fromARGB(255, 243, 187, 82),
-        //   fixedColor: Color.fromARGB(255, 243, 187, 82)
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(Icons.home,),label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.local_fire_department_outlined,),label: 'Trending'),
+            BottomNavigationBarItem(icon: Icon(Icons.fastfood,),label: 'Coldrinks'),
+            BottomNavigationBarItem(icon: Icon(Icons.person,),label: 'Profile')
+          ],
+          currentIndex: _selectedIndex, //New
+          onTap: _onItemTapped,
+          unselectedItemColor: Colors.black,
+          selectedItemColor: Colors.deepOrange,
+          // backgroundColor: Color.fromARGB(255, 243, 187, 82),
+          //   fixedColor: Color.fromARGB(255, 243, 187, 82)
+
+        ),
+        body: new IndexedStack(
+          index: _selectedIndex,
+          children: <Widget>[
+            // new main_home(),
+            new home(),
+            new home_page(),
+            new cold_drinks(),
+            new profile(),
+            // new YourCustomFeedWidget(),
+            // new YourCustomCommunityWidget(),
+          ],
+        ),
 
       ),
-      body: new IndexedStack(
-        index: _selectedIndex,
-        children: <Widget>[
-          // new main_home(),
-          new home(),
-          new home_page(),
-          new cold_drinks(),
-          new profile(),
-          // new YourCustomFeedWidget(),
-          // new YourCustomCommunityWidget(),
-        ],
-      ),
-
     );
 
   }
